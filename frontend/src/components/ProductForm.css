@@ -1,0 +1,86 @@
+/* Form container */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Form input fields */
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #007bff;
+  }
+  
+  /* Form labels */
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+    font-size: 14px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+  /* Responsive form */
+  @media (max-width: 768px) {
+    form {
+      padding: 15px;
+    }
+  
+    input,
+    textarea {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      padding: 10px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
